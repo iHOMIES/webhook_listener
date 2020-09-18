@@ -32,9 +32,11 @@ jobs:
           uses: 'azure/aci-deploy@v1'
           with:
             resource-group: dev
-            dns-name-label: homeless-webhook
+            dns-name-label: homeless
             image: homeless.azurecr.io/webhook_listener:${{ github.sha }}
+            registry-login-server: homeless.azurecr.io
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
-            name: webhook-listener
+            name: webhook_listener
             location: 'central us'
+            ports: 3000
