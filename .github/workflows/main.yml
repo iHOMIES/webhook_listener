@@ -25,7 +25,7 @@ jobs:
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
         - run: |
-            docker build .t homeless.azurecr.io/webhook_listener:${{ github.sha }}
+            docker build . -t homeless.azurecr.io/webhook_listener:${{ github.sha }}
             docker push homeless.azurecr.io/webhook_listener:${{ github.sha }}
 
         - name: 'Deploy to Azure Container Instances'
