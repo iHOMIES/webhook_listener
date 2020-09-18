@@ -37,6 +37,6 @@ jobs:
             registry-login-server: homeless.azurecr.io
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
-            name: webhook_listener
+            name: webhook-listener
             location: 'central us'
             ports: 3000
