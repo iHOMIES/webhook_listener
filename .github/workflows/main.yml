@@ -36,5 +36,5 @@ jobs:
             image: homeless.azurecr.io/webhook_listener:${{ github.sha }}
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
-            name: webhook_listener
+            name: webhook-listener
             location: 'central us'
