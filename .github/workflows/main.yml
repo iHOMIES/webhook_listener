@@ -31,7 +31,7 @@ jobs:
         - name: 'Deploy to Azure Container Instances'
           uses: 'azure/aci-deploy@v1'
           with:
-            resource-group: DTR
+            resource-group: dev
             dns-name-label: homeless-webhook
             image: homeless.azurecr.io/webhook_listener:${{ github.sha }}
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
