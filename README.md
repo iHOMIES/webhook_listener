@@ -45,7 +45,8 @@ We would love you to contribute to this project, pull requests are very welcome!
 
 ## TODO
 
-* Enable ssl/tls encryption if certificates are provided
+* [x] Enable ssl/tls encryption if certificates are provided
+* Add Unit Tests
 * Add repo commit including
   * Jenkinsfile/GitHub Workflow
   * Adding LICENSE file if not exists
