@@ -41,4 +41,4 @@ jobs:
             location: 'central us'
             ports: 3000
             secure-environment-variables: WEBHOOK_SIGNATURE=${{ secrets.WEBHOOK_SIGNATURE }} GITHUB_TOKEN=${{ secrets.GHE_TOKEN }}
-            environment-variables: WEBHOOK_SSL_CERT=${{ secrets.WEBHOOK_SSL_CERT }} WEBHOOK_SSL_KEY=${{ secrets.WEBHOOK_SSL_KEY }}
+            command-line: "export WEBHOOK_SSL_CERT=${{ secrets.WEBHOOK_SSL_CERT }} && export WEBHOOK_SSL_KEY=${{ secrets.WEBHOOK_SSL_KEY }} && npm start"
