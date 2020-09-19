@@ -31,16 +31,17 @@ Create a GitHub token and key for webhook signature.
    Only `Repositories` event is required, but you can configure more depending on specific use cases.
    ![](docs/images/webhook_config.png)
 
-
-
-
-
-## Contributing
-We would love you to contribute to this project, pull requests are very welcome! Please see CONTRIBUTING.md for more information.
-
 ## Limitations
 * If using GitHub free account, you need to work only with public repos.
 
+
+## References
+* https://github.com/octokit/rest.js
+* https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+* https://expressjs.com/en/4x/api.html#express
+
+## Contributing
+We would love you to contribute to this project, pull requests are very welcome! Please see CONTRIBUTING.md for more information.
 
 ## TODO
 
@@ -52,6 +53,7 @@ We would love you to contribute to this project, pull requests are very welcome!
 * Enable alerts to chat systems (slack, flowdock, hipchat)
 * Add default Wiki
 * Add default Project template (kanban)
+* Contribution.md with detailed instructions.
 
 ## LICENSE
 [Apache 2.0](LICENSE)

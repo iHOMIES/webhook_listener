@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
-var webhookListener = require('./lib/webhook_listener.js');
+var webhookListener = require("./lib/webhook_listener.js");
 webhookListener.start();
