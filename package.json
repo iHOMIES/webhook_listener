@@ -1,13 +1,16 @@
 {
-    "name": "docker_webhook_listener",
-    "version": "1.0.0",
-    "description": "Node.js on Docker",
-    "author": "Oscar Romero <yemario@hotmail.com>",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "express": "^4.16.1"
-    }
+  "name": "webhook_listener",
+  "version": "1.0.0",
+  "description": "Node.js GitHub Webhook listener on Docker",
+  "author": "Oscar Romero <yemario@hotmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "body-parser": "^1.13.3",
+    "log-timestamp": "0.3.0",
+    "@octokit/rest": "18.0.6"
   }
+}
