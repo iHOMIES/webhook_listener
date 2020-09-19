@@ -40,3 +40,4 @@ jobs:
             name: webhook-listener
             location: 'central us'
             ports: 3000
+            secure-environment-variables: WEBHOOK_SIGNATURE=${{ secrets.WEBHOOK_SIGNATURE }} GITHUB_TOKEN=${{ secrets.GHE_TOKEN }}
